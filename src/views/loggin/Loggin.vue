@@ -1,5 +1,6 @@
 <template>
   <div class="bodys">
+    <div>111111dasd asdd</div>
     <div class="log_form">
       <div class="log_form_head">欢迎来到小米后台管理系统</div>
       <div class="log_from_insi">
