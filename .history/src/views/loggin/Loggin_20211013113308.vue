@@ -1,7 +1,6 @@
 <template>
   <div class="bodys">
     <div>111111dasd asdd</div>
-    <div>dingqihui</div>
     <div class="log_form">
       <div class="log_form_head">欢迎来到小米后台管理系统</div>
       <div class="log_from_insi">
@@ -136,7 +135,10 @@ export default {
               console.log(res);
               if (res.data.code === 200) {
                 this.$message.success("登陆成功");
-                localStorage.setItem("user1", JSON.stringify(res.data.data[0]));
+                localStorage.setItem(
+                  "user1",
+                  JSON.stringify(res.data.data[0])
+                );
                 // console.log(res.data.data[0]);
                 this.$router.push("/");
               } else {
@@ -166,9 +168,9 @@ export default {
           "请求失败", err;
         });
     },
-    erwai() {
-      this.getDate();
-    },
+    erwai(){
+      this.getDate()
+    }
   },
   mounted() {
     this.getDate();
